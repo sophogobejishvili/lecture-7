@@ -1,7 +1,7 @@
 .background {
   background-image: url(../images/marvel_logo.png);
   background-repeat: no-repeat;
-  width: 100%S;
+  width: 100%;
   height: 900px;
   position: relative;
   background-size: cover;
@@ -15,48 +15,79 @@
   position: absolute;
 }
 
-.superhero .hulk {
+.hulk {
   /*opacity: 0;*/
   position: absolute;
-  top:350px ;
+  top:0px ;
   left: 100px;
-  animation: hulk;
+  animation: hulk 15s infinite;
+  animation-delay: 1s;
 }
 
-.superhero .widow {
+@keyframes hulk {
+  from { top:0px }
+  to { top:350px }
+}
+
+.widow {
   /*opacity: 0;*/
   position: absolute;
-  top:350px ;
+  top:0px ;
   left: 370px;
+  animation: widow 15s infinite;
+  animation-delay: 16s;
 }
+ @keyframes widow {
+  from { top:0px } 
+  to { top:350px }
+ }
 
-.superhero .thor {
+ .thor {
   /*opacity: 0;*/
   position: absolute;
-  top:350px ;
+  top:0px ;
   left: 620px;
+  animation: thor 15s infinite;
+  animation-delay: 31s;
 }
 
-.superhero .ironman {
+@keyframes thor {
+  from { top:0px }
+  to { top:350px }
+}
+
+ .ironman {
   width: 200px;
   height: 400px;
   /*opacity: 0;*/
   position: absolute;
-  top:350px ;
+  top:0px ;
   left: 930px;
+  animation: iron 15s infinite;
+  animation-delay: 46s;
 }
+ 
+@keyframes iron {
+  from { top:0px }
+  to { top:350px }
 
-.superhero .capA {
+} 
+.capA {
   /*opacity: 0;*/
   position: absolute;
-  top:350px ;
+  top:0px ;
   left: 1150px;
   width: 250px;
   height: 400px;
   position: absolute;
+  animation: cap 15s infinite;
+  animation-delay: 61s;
 }
 
-
+@keyframes cap {
+  from { top:0px }
+  to { top:350px }
+}
 
 
     
